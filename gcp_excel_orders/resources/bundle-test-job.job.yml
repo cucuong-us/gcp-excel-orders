@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    bundle_test_job:
+      name: bundle-test-${bundle.target}
+
+      queue:
+        enabled: true
+
+      tasks:
+        - task_key: run_bundle_test
+          notebook_task:
+            notebook_path: ../bundle_test.ipynb
