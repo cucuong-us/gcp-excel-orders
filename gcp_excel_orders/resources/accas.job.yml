@@ -1,6 +1,0 @@
-resources:
-  jobs:
-    accas:
-      name: accas
-      queue:
-        enabled: true
